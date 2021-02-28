@@ -1,0 +1,66 @@
+body{
+    background-image: url(../images/background.jpg);
+    background-size: auto;
+    box-sizing: border-box;
+}
+
+/* Character buttons background */
+#aries{
+    background-image: url(../images/icons/noelle.png);
+}
+
+#taurus{
+    background-image: url(../images/icons/diluc.png);
+}
+
+#gemini{
+    background-image: url(../images/icons/fischl.png);
+}
+
+#cancer{
+    background-image: url(../images/icons/tartaglia.png);
+}
+
+#leo{
+    background-image: url(../images/icons/amber.png);
+}
+
+#virgo{
+    background-image: url(../images/icons/ningguang.png);
+}
+
+#libra{
+    background-image: url(../images/icons/xingqiu.png);
+}
+
+#scorpio{
+    background-image: url(../images/icons/keqing.png);
+}
+
+#sagittarius{
+    background-image: url(../images/icons/kaeya.png);
+}
+
+#capricorn{
+    background-image: url(../images/icons/zhongli.png);
+}
+
+#aquarius{
+    background-image: url(../images/icons/beidou.png);
+}
+
+#pisces{
+    background-image: url(../images/icons/qiqi.png);
+}
+
+/* Control buttons background */
+#help{
+    background-image: url(../images/icons/help.png);
+}
+
+#exit{
+    background-image: url(../images/icons/close.png);
+}
+
+
+

@@ -3,18 +3,20 @@ import React from 'react';
 function ChangeableContentDiv(props){
     if(props.imgSrc !== ''){
         return(
-            <div>
+            <div id="character-content-div">
+                <div>
+                    <h1>{props.contentId}</h1>
+                    <p>{props.contentDescription}</p>
+                </div>
                 <img src={props.imgSrc} alt="Character Poster"/>
-                <h1>{props.contentId}</h1>
-                <p>{props.contentDescription}</p>
             </div>
         )
     }
     else{
         return(
-            <div>
+            <div id="main-content">
                 <h1>{props.contentId}</h1>
-                <p>{props.contentDescription}</p>
+                <h2>{props.contentDescription}</h2>
             </div>
         )
     }
