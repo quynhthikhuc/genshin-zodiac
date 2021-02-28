@@ -17,16 +17,16 @@
     background-size: cover;
     border: none;
     outline: none;
-    opacity: 50%;
+    opacity: 0.5;
 }
 
 button.active{
-    opacity: 100%;
+    opacity: 1;
 }
 
 .buttons:hover{
     cursor: pointer;
-    opacity: 100%;
+    opacity: 1;
 }
 
 #zodiac-button-list{
