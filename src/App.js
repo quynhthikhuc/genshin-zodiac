@@ -204,106 +204,109 @@ class App extends React.Component{
     render(){
         return(
             <div id="genshin-zodiac">
-                <div id="zodiac-button-list">
-                    <button 
-                        id="gemini" 
-                        className="buttons zodiac-buttons" 
-                        style={this.state.activeButton === 'gemini' ? {opacity: 100} : {}} 
-                        onClick={() => this.changeContentId('gemini')}
-                    ></button>
-                    <button 
-                        id="aquarius" 
-                        className="buttons zodiac-buttons" 
-                        style={this.state.activeButton === 'aquarius' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('aquarius')}
-                    ></button>
-                    <button 
-                        id="scorpio" 
-                        className="buttons zodiac-buttons" 
-                        style={this.state.activeButton === 'scorpio' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('scorpio')}
-                    ></button>
-                    <button 
-                        id="aries" 
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'aries' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('aries')}
-                    ></button>
-                    <button 
-                        id="capricorn" 
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'capricorn' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('capricorn')}
-                    ></button>
-                    <button 
-                        id="virgo" 
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'virgo' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('virgo')}
-                    ></button>
-                    <button 
-                        id="pisces" 
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'pisces' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('pisces')}
-                    ></button>
-                    <button 
-                        id="sagittarius"
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'sagittarius' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('sagittarius')}
-                    ></button>
-                    <button 
-                        id="taurus" 
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'taurus' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('taurus')}
-                    ></button>
-                    <button 
-                        id="leo" 
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'leo' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('leo')}
-                    ></button>
-                    <button 
-                        id="libra"
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'libra' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('libra')}
-                    ></button>
-                    <button 
-                        id="cancer"
-                        className="buttons zodiac-buttons"
-                        style={this.state.activeButton === 'cancer' ? {opacity: 100} : {}}
-                        onClick={() => this.changeContentId('cancer')}
-                    ></button>
-                </div>
-
-                <div id="control-button-list">
-                    <div>
+                <p id="warning">Sorry, this application is not supported in the current browser, please try open the application in Google Chrome or Firefox.</p>
+                <main>
+                    <div id="zodiac-button-list">
                         <button 
-                            id="help"
-                            className="buttons control-buttons"
-                            style={this.state.activeButton === 'help' ? {opacity: 100} : {}}
-                            onClick={this.handleHelp}
+                            id="gemini" 
+                            className="buttons zodiac-buttons" 
+                            style={this.state.activeButton === 'gemini' ? {opacity: 100} : {}} 
+                            onClick={() => this.changeContentId('gemini')}
                         ></button>
                         <button 
-                            id="exit"
-                            className="buttons control-buttons"
-                            onClick={this.handleExit}
+                            id="aquarius" 
+                            className="buttons zodiac-buttons in-between" 
+                            style={this.state.activeButton === 'aquarius' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('aquarius')}
+                        ></button>
+                        <button 
+                            id="scorpio" 
+                            className="buttons zodiac-buttons in-between" 
+                            style={this.state.activeButton === 'scorpio' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('scorpio')}
+                        ></button>
+                        <button 
+                            id="aries" 
+                            className="buttons zodiac-buttons in-between"
+                            style={this.state.activeButton === 'aries' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('aries')}
+                        ></button>
+                        <button 
+                            id="capricorn" 
+                            className="buttons zodiac-buttons in-between"
+                            style={this.state.activeButton === 'capricorn' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('capricorn')}
+                        ></button>
+                        <button 
+                            id="virgo" 
+                            className="buttons zodiac-buttons"
+                            style={this.state.activeButton === 'virgo' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('virgo')}
+                        ></button>
+                        <button 
+                            id="pisces" 
+                            className="buttons zodiac-buttons"
+                            style={this.state.activeButton === 'pisces' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('pisces')}
+                        ></button>
+                        <button 
+                            id="sagittarius"
+                            className="buttons zodiac-buttons in-between"
+                            style={this.state.activeButton === 'sagittarius' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('sagittarius')}
+                        ></button>
+                        <button 
+                            id="taurus" 
+                            className="buttons zodiac-buttons in-between"
+                            style={this.state.activeButton === 'taurus' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('taurus')}
+                        ></button>
+                        <button 
+                            id="leo" 
+                            className="buttons zodiac-buttons in-between"
+                            style={this.state.activeButton === 'leo' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('leo')}
+                        ></button>
+                        <button 
+                            id="libra"
+                            className="buttons zodiac-buttons in-between"
+                            style={this.state.activeButton === 'libra' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('libra')}
+                        ></button>
+                        <button 
+                            id="cancer"
+                            className="buttons zodiac-buttons"
+                            style={this.state.activeButton === 'cancer' ? {opacity: 100} : {}}
+                            onClick={() => this.changeContentId('cancer')}
                         ></button>
                     </div>
-                </div>
 
-                <div id="changeable-content-div">
-                    <ChangeableContentDiv contentId={this.state.contentId} contentDescription={this.state.contentDescription} imgSrc={this.state.imgSrc}/>
-                    {this.state.isHomepage ? 
-                    <div id="input">
-                        <input type="date" id="date"/>
-                        <input type="submit" value="SUBMIT" id="submit" onClick={this.checkValidDate}/>
-                    </div> 
-                    :null}
-                </div>
+                    <div id="control-button-list">
+                        <div>
+                            <button 
+                                id="help"
+                                className="buttons control-buttons"
+                                style={this.state.activeButton === 'help' ? {opacity: 100} : {}}
+                                onClick={this.handleHelp}
+                            ></button>
+                            <button 
+                                id="exit"
+                                className="buttons control-buttons"
+                                onClick={this.handleExit}
+                            ></button>
+                        </div>
+                    </div>
+
+                    <div id="changeable-content-div">
+                        <ChangeableContentDiv contentId={this.state.contentId} contentDescription={this.state.contentDescription} imgSrc={this.state.imgSrc}/>
+                        {this.state.isHomepage ? 
+                        <div id="input">
+                            <input type="date" id="date"/>
+                            <input type="submit" value="SUBMIT" id="submit" onClick={this.checkValidDate}/>
+                        </div> 
+                        :null}
+                    </div>
+                </main>
             </div>
         )
     }

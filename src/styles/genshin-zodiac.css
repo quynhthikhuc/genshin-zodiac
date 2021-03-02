@@ -1,192 +1,218 @@
-/* Page width */
-#genshin-zodiac{
-    height: 100%;
-    margin: 2rem auto 0;
-    width: 90%;
-}
+@supports(gap: 10px){
+    /* Page width */
+    #warning{
+        display: none;
+    }
 
-@media (min-width: 768px){
     #genshin-zodiac{
-        width: 80%;
+        height: 100%;
+        margin: 2rem auto 0;
+        width: 90%;
     }
-}
 
-/* Style character buttons */
-.buttons{
-    background-color: transparent;
-    background-size: cover;
-    border: none;
-    outline: none;
-    opacity: 0.5;
-}
+    @media (min-width: 768px){
+        #genshin-zodiac{
+            width: 80%;
+        }
+    }
 
-button.active{
-    opacity: 1;
-}
+    /* Style character buttons */
+    .buttons{
+        background-color: transparent;
+        background-size: cover;
+        border: none;
+        outline: none;
+        opacity: 0.5;
+    }
 
-.buttons:hover{
-    cursor: pointer;
-    opacity: 1;
-}
+    button.active{
+        opacity: 1;
+    }
 
-#zodiac-button-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
+    .buttons:hover{
+        cursor: pointer;
+        opacity: 1;
+    }
 
-.zodiac-buttons{
-    height: 76px;
-    width: 76px;
-}
-
-@media (min-width: 768px){
     #zodiac-button-list{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        grid-template-rows: auto auto;
-        gap: 0.8rem;
-        width: 31.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 2rem;
     }
-}
 
-/* Style control buttons */
-#control-button-list{
-    margin: 1rem auto;
-    width: 90%;
-}
-
-#control-button-list div{
-    display: flex;
-    gap: 0.5rem;
-    justify-content: flex-end;
-}
-
-.control-buttons{
-    height: 50px;
-    width: 50px;
-}
-
-/* Style changeable content */
-#changeable-content-div{
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #FFF;
-    margin: 1rem auto 5rem;
-    width: 90%;
-}
-
-#changeable-content-div h1, #changeable-content-div h2{
-    margin: 0 auto 1rem;
-    padding-top: 2rem;
-    text-align: center;
-    width: 90%;
-}
-
-#changeable-content-div h1{
-    font-size: 2.5rem;
-    line-height: 3rem;
-}
-
-#changeable-content-div h2{
-    border-top: 2px solid #FFF;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    padding-top: 1rem;
-}
-
-#changeable-content-div p{
-    border-top: 2px solid #FFF;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-    width: 90%;
-}
-
-#changeable-content-div img{
-    display: none;
-}
-
-#changeable-content-div input{
-    display: block;
-}
-
-#input{
-    padding-bottom: 1rem;
-}
-
-#date{
-    font-family: 'Default_SC', serif;;
-    font-size: 1rem;
-    height: 2rem;
-    margin: 0 auto;
-    text-align: center;
-    padding-left: 4%;
-    width: 60%;
-    max-width: 20rem;
-}
-
-#date:hover{
-    cursor: pointer;
-}
-
-#submit{
-    background-color: transparent;
-    border: 3px solid #FFF;
-    color: #FFF;
-    font-family: 'Default_SC', serif;;
-    font-size: 1.2rem;
-    margin: 2rem  auto;
-    padding: 1rem;
-}
-
-#submit:hover{
-    background-color: #FFF;
-    color: #000;
-    cursor: pointer;
-}
-
-@media (min-width: 768px){
-    #date{
-        padding-left: 2%;
-        width: 40%;
+    .zodiac-buttons{
+        height: 76px;
+        width: 76px;
     }
-}
 
-@media (min-width: 1200px){
+    @media (min-width: 768px){
+        #zodiac-button-list{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 0.8rem;
+            width: 31.25rem;
+        }
+    }
+
+    /* Style control buttons */
     #control-button-list{
-        max-width: 50rem;
-        width: 86%;
+        margin: 1rem auto;
+        width: 90%;
     }
 
+    #control-button-list div{
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-end;
+    }
+
+    .control-buttons{
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Style changeable content */
     #changeable-content-div{
-        max-width: 50rem;
-        width: 86%;
+        background-color: rgba(255, 255, 255, 0.3);
+        color: #FFF;
+        margin: 1rem auto 5rem;
+        width: 90%;
     }
 
-    #character-content-div{
-        display: grid;
-        grid-template-columns: 39.75% 0.5% 59.75%;
-        grid-template-areas: 'img . content';
+    #changeable-content-div h1, #changeable-content-div h2{
+        margin: 0 auto 1rem;
+        padding-top: 2rem;
+        text-align: center;
+        width: 90%;
     }
 
-    #character-content-div div{
-        align-self: center;
-        grid-area: content;
+    #changeable-content-div h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 
-    #character-content-div img{
+    #changeable-content-div h2{
+        border-top: 2px solid #FFF;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding-top: 1rem;
+    }
+
+    #changeable-content-div p{
+        border-top: 2px solid #FFF;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        width: 90%;
+    }
+
+    #changeable-content-div img{
+        display: none;
+    }
+
+    #changeable-content-div input{
         display: block;
-        grid-area: img;
-        width: 100%;
+    }
+
+    #input{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        width: 90%;
     }
 
     #date{
-        width: 40%;
+        font-family: 'Default_SC', serif;;
+        font-size: 1rem;
+        height: 1.8rem;
+        width: 12rem;
+    }
+
+    #date:hover{
+        cursor: pointer;
+    }
+
+    #submit{
+        background-color: transparent;
+        border: 3px solid #FFF;
+        color: #FFF;
+        font-family: 'Default_SC', serif;;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    #submit:hover{
+        background-color: #FFF;
+        color: #000;
+        cursor: pointer;
+    }
+
+    @media (min-width: 900px){
+        #control-button-list{
+            max-width: 50rem;
+            width: 86%;
+        }
+
+        #character-content-div{
+            display: grid;
+            grid-template-columns: 39.75% 0.5% 59.75%;
+            grid-template-areas: 'img . content';
+        }
+
+        #character-content-div div{
+            align-self: center;
+            grid-area: content;
+        }
+
+        #character-content-div img{
+            display: block;
+            grid-area: img;
+            width: 100%;
+        }
+
+        #changeable-content-div{
+            max-width: 50rem;
+            width: 86%;
+        }
+    }
+
+    @media (min-width: 1200px){
+        #changeable-content-div{
+            max-width: 50rem;
+            width: 76%;
+        }
+    }
+}
+
+
+@media not all and (min-resolution:.001dpcm){ 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        #warning{
+            color: #FFF;
+            display: block;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        #genshin-zodiac main{ 
+            display: none;
+        }
+
+        @media(min-width: 768px){
+            #warning{
+                padding-top: 5rem;
+            }
+        }
     }
 }
